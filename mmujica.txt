@@ -1,0 +1,70 @@
+Practica
+
+- Que permisologia tiene los siguientes archivos
+rwxrwx--- 770
+--------- 000
+rw-rw---- 660
+r-xr-xr-x 555
+---rw-r-x 065
+--x--x--x 111
+
+
+- Ejecuten la búsqueda con grep buscando cunaguaro y guarde la salida en un archivo llamado
+firefox.txt
+
+R: $ ls | grep cunaguaro > firefox.txt
+
+-Cuanto pesa tu /home/ y cuanto pesa /etc
+
+R: $ du -sh /home
+R: $ du -sh /etc
+ 
+
+- Se requiere guardar un archivo dentro de la configuración de la memoria del computador dentro
+de un archivo llamado memoria.txt
+
+R: $ cat /proc/meninfo > memoria.txt
+R: $ free - h >> memoria.txt
+
+-Se requiere guardar toda la configuración de la versión del kernel en un archivo llamado kernel.txt
+
+R: $ uname -a > kernel.txt
+
+- Como matamos un proceso del computador
+
+R: $ kill -9 (No. Proceso)
+
+- Que hace el respectivo comando $cat toto > toto2
+
+R: la salida de toto se copia en toto2
+
+- Como puedo visualizar las particiones del disco duro
+
+R: # fdisk -l
+
+ls -al /home/jf/ > toto.txt && echo "Toto" > /etc/miarchivodeconfiguración (se arreglo &&)
+
+R: lista el directorio /home/jf y lo coloca dentro de un archivo toto.txt. 
+Luego coloca la palabra Toto dentro del archivo miarchivodeconfiguración
+
+- Cree una carpeta con tu nombre
+R: $ mkdir mmujica
+
+- Dentro de la carpeta, creamos tres archivos de nombre c1 c2 c3
+R: $ cd mmujica && touch c1 
+R: $ cp c1 c2 && cp c1 c3
+- Guardamos en el c1 su nombre completo
+R: $ echo "mmujica" >> c1
+- Guardamos en el c2 la cédula
+R: $ echo "10283114" >> c2
+- Guardamos el c3 el correo electrónico
+R: $ echo manuel@ubuntu.org.ve >> c3
+
+- Describa a continuación la función de los siguientes directorios
+/bin    (archivos binarios, ejecutables)
+/home/  (archivos de usuario)
+/media  (dispositivos extraibles,etc)
+/var    (variables, www)
+/       (root)
+/sbin   ( archivos binarios, ejecutables del usuario)
+/boot   (archivos de arranque, grub)
